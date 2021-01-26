@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.DoubleDotLabs.doki'
+group = 'com.github.DoubleDotLabs.doki'
 
 android {
     compileSdkVersion meta.sdk
@@ -44,9 +44,9 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$deps.android.appcompat"
     implementation "com.google.android.material:material:$deps.android.material"
     implementation "androidx.constraintlayout:constraintlayout:$deps.android.constraintlayout"
-    implementation "ru.noties.markwon:core:$deps.markwon"
-    implementation "ru.noties.markwon:html:$deps.markwon"
-    implementation "ru.noties.markwon:image-okhttp:$deps.markwon"
+    implementation "io.noties.markwon:core:$deps.markwon"
+    implementation "io.noties.markwon:html:$deps.markwon"
+    implementation "io.noties.markwon:image:$deps.markwon"
 
     api project(path: ':api')
 }
